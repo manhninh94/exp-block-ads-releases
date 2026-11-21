@@ -26,3 +26,6 @@ Truy vấn DNS được chuyển tiếp qua HTTPS tới **Control D Ads & Tracki
 APK được đối chiếu SHA-256, package, phiên bản và chứng thư ký của app đang cài. Android installer là bên xác minh chữ ký và cài đặt cuối cùng. Đây là kênh thử nghiệm, chưa đảm bảo tương thích mọi ROM. Luồng cài updater cần tiếp tục được xác nhận trên thiết bị thật.
 
 Báo lỗi qua [Issues](https://github.com/manhninh94/exp-block-ads-releases/issues), kèm phiên bản app và Android.
+
+### Hiển thị IP từ 0.3.3
+Màn hình chính hiển thị mạng, IP công khai và IP trong mạng. IP công khai lấy qua HTTPS `api64.ipify.org` trên đúng mạng hiển thị khi màn hình chính mở và mạng/địa chỉ thay đổi hoặc người dùng chạm kiểm tra lại. Dịch vụ ipify thấy IP kết nối; không gửi lịch sử DNS hay mã định danh, không lưu IP vào file. Không kiểm tra IP định kỳ ở nền. Khi VPN bật, “Đường DNS” chỉ mạng dùng cho DNS, không chứng minh mọi ứng dụng dùng cùng đường.
