@@ -14,7 +14,7 @@ VPN cục bộ lọc DNS ngay trên điện thoại; web/game không đi qua má
 
 ## Dữ liệu và cập nhật
 
-App không có tài khoản và không tích hợp analytics. Tên miền được xử lý trong bộ nhớ để lọc; app không lưu lịch sử tên miền. Cấu hình, danh sách lọc, metadata cập nhật và APK tải về được lưu trong vùng riêng của app. Bộ đếm DNS được giữ trong phiên chạy. Gỡ app sẽ xóa dữ liệu cục bộ.
+App không có tài khoản và không tích hợp analytics. Mặc định, tên miền chỉ được xử lý trong bộ nhớ để lọc và app không ghi lịch sử. Từ 0.3.1, bạn có thể chủ động bật chẩn đoán DNS trong cài đặt sau khi xem thông báo. Chẩn đoán ghi 60 giây, tối đa 256 tên miền của toàn máy và trạng thái xử lý DNS, không xác định riêng từng app; dữ liệu chỉ ở RAM và tự hết hạn tối đa 6 phút từ lúc bắt đầu. Không lưu file hoặc tự gửi báo cáo ra máy chủ. Nếu tự chọn sao chép/chia sẻ, tên miền có thể tiết lộ dịch vụ bạn đã truy cập. Clipboard copy có vòng đời riêng do Android quản lý; bản copy không thuộc thời gian giữ RAM của app. Cấu hình, danh sách lọc, metadata cập nhật và APK tải về được lưu trong vùng riêng của app. Bộ đếm DNS được giữ trong phiên chạy. Gỡ app sẽ xóa dữ liệu cục bộ.
 
 Truy vấn DNS được chuyển tiếp qua HTTPS tới **Control D Ads & Tracking** hoặc **AdGuard DNS** nếu cần. Các nhà cung cấp đó có thể thấy IP và tên miền được hỏi. Danh sách lọc tải từ GitHub (HaGeZi). Kiểm tra/tải cập nhật app cũng kết nối GitHub; GitHub có thể ghi nhận IP và thông tin kết nối theo chính sách của họ. Không có token GitHub trong APK.
 
